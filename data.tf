@@ -44,7 +44,7 @@ data "aws_iam_policy_document" "this_assume_role" {
 
 data "aws_ami" "this" {
   most_recent = true
-  owners      = ["591542846629"]
+  owners      = ["590183792449"]
 
   filter {
     name   = "name"

@@ -42,9 +42,10 @@ data "aws_iam_policy_document" "this_assume_role" {
   }
 }
 
+
 data "aws_ami" "this" {
   most_recent = true
-  owners      = ["590183792449"]
+  owners      = ["591542846629"]
 
   filter {
     name   = "name"
@@ -66,6 +67,7 @@ data "aws_ami" "this" {
     values = ["x86_64"]
   }
 }
+
 
 data "aws_security_group" "this_private" {
   filter {
